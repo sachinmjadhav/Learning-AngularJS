@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="likesApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+
+    <title>AngularJS ng-app ng-controller</title>
+</head>
+
+<body>
+
+    <div class="container mt-5" ng-controller="likeAppCtrl">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white text-center">
+                        <h3>UiBrains AngularJS App</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-block" ng-click="likesFn()">
+                                    <i class="fa fa-thumbs-up fa-3x mb-3"></i>
+                                    <h2>Likes</h2>
+                                </a>
+                                <a class="btn btn-secondary btn-block">
+                                    <h2>{{likes}}</h2>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-danger btn-block" ng-click="dislikesFn()">
+                                    <i class="fa fa-thumbs-down fa-3x mb-3"></i>
+                                    <h2>Dislikes</h2>
+                                </a>
+                                <a class="btn btn-secondary btn-block">
+                                    <h2>{{dislikes}}</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <h3 class="text-muted text-center">Total =
+                            <span class="text-secondary">{{total}}</span>
+                            <p><a class="btn btn-info" ng-click="reset()">Reset</a></p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Body Ends -->
+<script src="../bootstrap/js/fontawesome-all.js" ></script>
+<script src="../bootstrap/js/jquery-3.2.1.min.js" ></script>
+<script src="../bootstrap/js/popper.min.js" ></script>
+<script src="../bootstrap/js/bootstrap.min.js" ></script>
+<script src="../bootstrap/js/mdb.min.js" ></script>
+<script src="../angular/angular.js" ></script>
+<script src="04_app.js" ></script>
+</html>
